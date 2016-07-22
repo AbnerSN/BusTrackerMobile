@@ -2,7 +2,7 @@ package ufc.pet.bustracker.ufc.pet.bustracker.types;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Polyline;
-
+import java.util.List;
 import java.util.ArrayList;
 
 public class Route {
@@ -10,7 +10,7 @@ public class Route {
     private String name;
     private String description;
     private ArrayList<Integer> id_buses;
-    private ArrayList<LatLng> points;
+    private List<LatLng> points;
     private Polyline associatedPolyline;
 
     public Route(){
@@ -50,11 +50,11 @@ public class Route {
         this.id_buses = id_buses;
     }
 
-    public ArrayList<LatLng> getPoints() {
+    public List<LatLng> getPoints() {
         return points;
     }
 
-    public void setPoints(ArrayList<LatLng> points) {
+    public void setPoints(List<LatLng> points) {
         this.points = points;
     }
 

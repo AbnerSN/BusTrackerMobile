@@ -21,9 +21,22 @@ public class Bus {
         this.coordinates = new LatLng(latitude, longitude);
         this.velocity = velocity;
         this.lastUpdates.add(updateTime);
+
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getId(){
+        return id;
     }
 
     public Date getLastUpdate(){
         return lastUpdates.get(0);
+    }
+
+    public LatLng getCoordinates(){
+        return coordinates;
     }
 }
