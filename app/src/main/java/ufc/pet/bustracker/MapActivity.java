@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -180,6 +181,16 @@ public class MapActivity extends AppCompatActivity implements
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
+    }
+
+
+    public void onClickAbout(MenuItem item){
+        startActivity(new Intent(MapActivity.this, AboutActivity.class));
+    }
+
+
+    public void onClickSettings(MenuItem item){
+        return;
     }
 
     /**
