@@ -185,7 +185,7 @@ public class MapActivity extends AppCompatActivity implements
 
 
     public void onClickAbout(MenuItem item){
-        startActivity(new Intent(MapActivity.this, AboutActivity.class));
+        //startActivity(new Intent(MapActivity.this, AboutActivity.class));
     }
 
 
