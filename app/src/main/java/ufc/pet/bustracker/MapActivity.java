@@ -325,6 +325,7 @@ public class MapActivity extends AppCompatActivity implements
     @Override
     public void onResume(){
         super.onResume();
+        handler.postDelayed(updateBus, 250);
     }
 
     /**
